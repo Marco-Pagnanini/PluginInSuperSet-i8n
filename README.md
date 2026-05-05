@@ -1,5 +1,6 @@
-# PluginInSuperSet-i8n 🌍
 
+# PluginInSuperSet-i8n 🌍
+<img width="1679" height="914" alt="Screenshot 2026-05-05 114243" src="https://github.com/user-attachments/assets/0c6f565f-befe-4e69-be54-411fbc9bdb56" />
 **PluginInSuperSet-i8n** is a custom Apache Superset plugin designed to enable dynamic multi-language support (i18n) directly within charts. Unlike standard Superset charts, this plugin allows for the real-time translation of metrics, dimensions, and other UI elements based on the user's profile or context variables.
 
 ## 🌟 The Problem Solved
