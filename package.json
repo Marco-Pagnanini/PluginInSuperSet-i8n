@@ -1,0 +1,21 @@
+{
+  "name": "superset-plugin-chart-hello-world",
+  "version": "0.1.0",
+  "description": "A hello world plugin",
+  "sideEffects": false,
+  "main": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "private": true,
+  "scripts": {
+    "build": "echo 'no build needed for dev'"
+  },
+  "author": "Marco Pagnanini",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@superset-ui/chart-controls": "*",
+    "@superset-ui/core": "*",
+    "react": "*"
+  }
+}
