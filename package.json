@@ -9,7 +9,48 @@
   ],
   "private": true,
   "scripts": {
-    "build": "echo 'no build needed for dev'"
+    "build": "echo 'no build needed for dev'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "setupFiles": [
+      "@testing-library/jest-dom"
+    ],
+    "moduleNameMapper": {
+      "superset-get-bootstrap-data": "<rootDir>/src/__mocks__/superset-get-bootstrap-data.ts",
+      "echarts-timeseries-build-query": "<rootDir>/src/__mocks__/empty.ts",
+      "echarts-timeseries-chart": "<rootDir>/src/__mocks__/empty.ts",
+      "echarts-bar-control-panel": "<rootDir>/src/__mocks__/controlPanelMock.ts",
+      "echarts-line-control-panel": "<rootDir>/src/__mocks__/controlPanelMock.ts",
+      "echarts-area-control-panel": "<rootDir>/src/__mocks__/controlPanelMock.ts",
+      "scatter-control-panel": "<rootDir>/src/__mocks__/controlPanelMock.ts",
+      "mixed-control-panel": "<rootDir>/src/__mocks__/controlPanelMock.ts",
+      "mixed-build-query": "<rootDir>/src/__mocks__/empty.ts",
+      "mixed-chart": "<rootDir>/src/__mocks__/empty.ts",
+      "mixed-transform": "<rootDir>/src/__mocks__/transformMock.ts",
+      "bignumber-total-control-panel": "<rootDir>/src/__mocks__/controlPanelMock.ts",
+      "bignumber-total-build-query": "<rootDir>/src/__mocks__/empty.ts",
+      "bignumber-total-transform": "<rootDir>/src/__mocks__/transformMock.ts",
+      "bignumber-viz": "<rootDir>/src/__mocks__/empty.ts",
+      "pie-control-panel": "<rootDir>/src/__mocks__/controlPanelMock.ts",
+      "pie-build-query": "<rootDir>/src/__mocks__/empty.ts",
+      "pie-chart": "<rootDir>/src/__mocks__/empty.ts",
+      "pie-transform": "<rootDir>/src/__mocks__/transformMock.ts",
+      "waterfall-control-panel": "<rootDir>/src/__mocks__/controlPanelMock.ts",
+      "waterfall-build-query": "<rootDir>/src/__mocks__/empty.ts",
+      "waterfall-chart": "<rootDir>/src/__mocks__/empty.ts",
+      "waterfall-transform": "<rootDir>/src/__mocks__/transformMock.ts",
+      "waterfall-constants": "<rootDir>/src/__mocks__/waterfallConstants.ts",
+      "\\.(jpg|png|svg)$": "<rootDir>/src/__mocks__/fileMock.ts"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.test.ts",
+      "**/__tests__/**/*.test.tsx"
+    ]
   },
   "author": "Marco Pagnanini",
   "license": "Apache-2.0",
@@ -17,5 +58,14 @@
     "@superset-ui/chart-controls": "*",
     "@superset-ui/core": "*",
     "react": "*"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^12.1.5",
+    "@types/jest": "^30.0.0",
+    "@types/testing-library__jest-dom": "^5.14.9",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "ts-jest": "^29.4.9"
   }
 }

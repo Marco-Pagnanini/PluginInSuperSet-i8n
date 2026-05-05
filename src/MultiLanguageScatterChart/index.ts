@@ -1,12 +1,11 @@
-import { Behavior, t } from '@superset-ui/core';
+import { AnnotationType, Behavior, t } from '@superset-ui/core';
 import { EchartsChartPlugin } from '@superset-ui/plugin-chart-echarts';
 import buildQuery from 'echarts-timeseries-build-query';
 import controlPanel from './controlPanel';
 import transformProps from './transformProps';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import thumbnail from '../images/areachart.png';
+import thumbnail from '../images/scatterchart.png';
 
-export default class MultiLanguageAreaChartPlugin extends EchartsChartPlugin {
+export default class MultiLanguageScatterChartPlugin extends EchartsChartPlugin {
   constructor() {
     super({
       buildQuery,
@@ -18,10 +17,16 @@ export default class MultiLanguageAreaChartPlugin extends EchartsChartPlugin {
           Behavior.DrillToDetail,
           Behavior.DrillBy,
         ],
+        supportedAnnotationTypes: [
+          AnnotationType.Event,
+          AnnotationType.Formula,
+          AnnotationType.Interval,
+          AnnotationType.Timeseries,
+        ],
         category: t('Evolution'),
-        description: t('Area chart with multilingual support (IT, EN, ES, FR).'),
-        name: t('Multilingual Area Chart'),
-        tags: [t('ECharts'), t('Area'), t('i18n')],
+        description: t('Scatter plot with multilingual metric label support (IT, EN, ES, FR).'),
+        name: t('Multilingual Scatter Plot'),
+        tags: [t('ECharts'), t('Scatter'), t('i18n')],
         thumbnail,
       },
       transformProps,

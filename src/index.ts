@@ -5,3 +5,5 @@ export { default as MultiLanguageLineChartPlugin } from './MultiLanguageLineChar
 export { default as MultiLanguageAreaChartPlugin } from './MultiLanguageAreaChart';
 export { default as MultiLanguageWaterfallPlugin } from './MultiLanguageWaterfall';
 export { default as MultiLanguagePieChartPlugin } from './MultiLanguagePieChart';
+export { default as MultiLanguageMixedChartPlugin } from './MultiLanguageMixedChart';
+export { default as MultiLanguageScatterChartPlugin } from './MultiLanguageScatterChart';

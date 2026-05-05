@@ -2,7 +2,7 @@ import { ChartMetadata, ChartPlugin, t } from '@superset-ui/core';
 import buildQuery from 'waterfall-build-query';
 import controlPanel from './controlPanel';
 import transformProps from './transformProps';
-import thumbnail from '../images/logo.jpg';
+import thumbnail from '../images/waterfallchart.png';
 
 export default class MultiLanguageWaterfallPlugin extends ChartPlugin {
   constructor() {

@@ -4,7 +4,7 @@ import buildQuery from 'echarts-timeseries-build-query';
 import controlPanel from './controlPanel';
 import transformProps from './transformProps';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import thumbnail from '../images/logo.jpg';
+import thumbnail from '../images/linechart.png';
 
 export default class MultiLanguageLineChartPlugin extends EchartsChartPlugin {
   constructor() {

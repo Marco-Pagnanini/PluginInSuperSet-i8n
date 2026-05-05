@@ -3,7 +3,7 @@ import { EchartsChartPlugin } from '@superset-ui/plugin-chart-echarts';
 import buildQuery from 'pie-build-query';
 import controlPanel from './controlPanel';
 import transformProps from './transformProps';
-import thumbnail from '../images/logo.jpg';
+import thumbnail from '../images/piechart.png';
 
 export default class MultiLanguagePieChartPlugin extends EchartsChartPlugin {
   constructor() {

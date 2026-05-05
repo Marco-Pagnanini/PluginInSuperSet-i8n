@@ -4,7 +4,7 @@ import buildQuery from 'bignumber-total-build-query';
 import controlPanel from './controlPanel';
 import transformProps from './transformProps';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import thumbnail from '../images/logo.jpg';
+import thumbnail from '../images/bignumber.png';
 
 export default class MultiLanguageBigNumberPlugin extends EchartsChartPlugin {
   constructor() {
@@ -19,7 +19,7 @@ export default class MultiLanguageBigNumberPlugin extends EchartsChartPlugin {
           'Big Number with multilingual subheader (IT, EN, ES, FR).',
         ),
         name: t('Multilingual Big Number'),
-        tags: [t('KPI'), t('i18n'), t('Featured')],
+        tags: [t('KPI'), t('i18n')],
         thumbnail,
       },
       transformProps,
